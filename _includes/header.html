@@ -1,0 +1,30 @@
+<header>
+		  <button class="toggle-nav">
+			    <span>></span>
+		  </button>
+		  <ul class="nav">
+			    <li class="loud"><a href="#">Home</a></li>
+			    <li class="loud"><a href="#">About</a></li>
+			    <li class="loud"><a href="#">Case studies</a></li>
+			    <li class="loud"><a href="#">Clients</a></li>
+			    <li class="loud"><a href="#">Contact</a></li>
+		  </ul>
+	</header>
+    
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  <script>
+  $(document).ready(function(){
+
+    var header = $('header'),
+                btn    = $('button.toggle-nav');
+
+    btn.on('click', function(){
+          header.toggleClass('active');
+    });
+
+});
+  </script>
+
+</body>
+</html>
