@@ -22,9 +22,9 @@ $.widget("water.raindrops", {
         if (!this.options.canvasHeight) {
             this.options.canvasHeight = this.element.height() / 2;
         }
-        if (!this.options.canvasWidth) {
-            this.options.canvasWidth = this.element.width();
-        }
+        const width  = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        this.options.canvasWidth = width;
+
         this.options.realWidth = this.options.canvasWidth + this.options.rightPadding;
         canvas.height = this.options.canvasHeight;
         canvas.width = this.options.realWidth;
