@@ -25,12 +25,16 @@ header h1, h2, h3, h4 {
 
 header {
     background: #2b2e48;
+    background-image: linear-gradient(rgba(43, 46, 72, 0.6), rgba(43, 46, 72, 0.8)), url("/assets/img/night.jpg");
+    background-size: 1500px;
+    background-position: center;
+
     padding: 5px;
     -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
     -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
     -ms-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .navbar {
