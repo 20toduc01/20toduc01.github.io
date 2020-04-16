@@ -84,9 +84,3 @@ red {
     text-decoration: underline;
     color: #2980b9;
 }
-
-.image {
-    position: absolute;
-    left: 58%;
-    top: 210px;
-}
