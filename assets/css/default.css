@@ -24,3 +24,10 @@ body {
     margin: 0;
     width: 100%;
 }
+
+@font-face {
+    font-family: 'Segoe UI Light';
+    src: url('/assets/fonts/segoeuil.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
