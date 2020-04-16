@@ -2,6 +2,11 @@ body, html {
     height: 100%;
 }
 
+.container10 {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 body {
     background: #f9f9f9;
     background-size: cover;
