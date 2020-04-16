@@ -26,7 +26,7 @@ header h1, h2, h3, h4 {
 header {
     background: #2b2e48;
     background-image: linear-gradient(rgba(43, 46, 72, 0.6), rgba(43, 46, 72, 0.8)), url("/assets/img/night.jpg");
-    background-size: 1500px;
+    background-size: 100vw;
     background-position: center;
 
     padding: 5px;
