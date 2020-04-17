@@ -26,11 +26,13 @@ const goToSlide = (slideElements, index) => {
   }
 };
 
-$('.content__slide:nth-child(1)').on('click', () => goToSlide(slideElements, 2));
-$('.content__slide:nth-child(2)').on('click', () => goToSlide(slideElements, 1));
+var slide = 1;
+$('.wrap').on('click', () => {
+    goToSlide(slideElements, slide + 1)
+    slide += 1;
+    slide %= 2;
+});
 
-setTimeout(() => goToSlide(slideElements, 2), 2000);
-setTimeout(() => goToSlide(slideElements, 1), 6000);
 
 // let amount = 0;
 // let slide = 0;
