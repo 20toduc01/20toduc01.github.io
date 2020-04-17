@@ -73,10 +73,8 @@ body, .wrap {
 }
 .back__slide:nth-child(2):before {
   background-image: url("/assets/img/index/mount.png"); /*BK UPPER WHITE*/
-  opacity: 0.2;
-  background-repeat: no-repeat;
-  background-size: 101% auto;
-  background-position: right calc(50% - 14rem);
+  opacity: 0.3;
+
 }
 .back__slide:nth-child(2) .back-front-image {
   position: absolute;
