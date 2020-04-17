@@ -72,9 +72,11 @@ body, .wrap {
   opacity: 0.2;
 }
 .back__slide:nth-child(2):before {
-  background-image: url("/assets/img/index/mount.png"); /*BK UPPER WHITE*/
+  background-image: url("/assets/img/index/mount.jpg"); /*BK UPPER WHITE*/
   opacity: 0.3;
-
+  background-repeat: no-repeat;
+  background-size: 101% auto;
+  background-position: right calc(50% - 14rem);
 }
 .back__slide:nth-child(2) .back-front-image {
   position: absolute;
@@ -331,7 +333,7 @@ body, .wrap {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("/assets/img/index/mount.png"); /*WHITE*/
+  background-image: url("/assets/img/index/mount.jpg"); /*WHITE*/
   background-size: 101% auto;
   background-position: center 85%;
   background-repeat: no-repeat;

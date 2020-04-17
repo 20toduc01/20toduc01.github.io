@@ -27,12 +27,11 @@ const goToSlide = (slideElements, index) => {
 };
 
 var slide = 1;
-$('.wrap').on('click', () => {
-    goToSlide(slideElements, slide + 1)
+setInterval( () => {
+    goToSlide(slideElements, slide + 1);
     slide += 1;
     slide %= 2;
-});
-
+}, 10000);
 
 // let amount = 0;
 // let slide = 0;
