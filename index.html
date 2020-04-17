@@ -1,48 +1,64 @@
----
-layout: default
-css: index.css
----
-<div class="container">
-    <br>
-    <br>
-    <div class="row featurette">
-        <div class="col-md-7">
-            <div class="text">
-                <p>Hello there,&nbsp;</p>
-                <span class="word wisteria"></span>
-                <span class="word midnight">visitor.</span>
-                <span class="word belize">friend.</span>
-                <span class="word pomegranate">programmer.</span>
-                <span class="word green">developer.</span>
-                <span class="word belize">engineer.</span>
-                <span class="word wisteria">smartass.</span>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <title>20toduc01 | Tô Đức</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin|Montserrat:600|Playfair+Display|Roboto+Mono:500" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="wrap">
+        <div class="back">
+            <div class="back__slide active">
+                <div class="progress"></div>
             </div>
-            <br>
-            <div class="para">
-                <p>
-                    Have you ever pondered upon our existence in this strange universe?
-                </p>
-                <p>
-                    Do you like to discuss programming related matters?
-                </p>
-                <p>
-                    Or do you, by any chance, like to talk about weeb-shit?
-                </p>
-                <p>
-                    If the answers are YES, awesome! If not, since you are here anyway, <red>let me show you around! </red>
-                </p>
-
-                <p> My name is <red> Đức</red>. Throughout my middle school years I had grown fond of <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">competitive programming</a> (never got a chance to git gud at it).
-                    Later on I got to learn amazing things about <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">our cosmos</a> and related philosophy matters. The creation of this site helps me share them all with my friends, loved ones and
-                    possibly strangers as well.
-                </p>
+            <div class="back__slide">
+                <div class="progress"></div>
+                <div class="back-front-image"></div>
             </div>
         </div>
-        <div class="col-md-5">
-            <img src="assets/img/my.png" style="width:100%; margin-top: 100px;">
+        <div class="card">
+
+            <div class="card__slide active">
+                <div class="image"></div><span class="number">01</span><span class="date" id="curdate"></span>
+            </div>
+            <div class="card__slide">
+                <div class="back-image"></div>
+                <div class="image"></div><span class="number">02</span><span class="date" id="curdate2"></span>
+            </div>
+            <div class="content">
+                <div class="content__slide active">
+                    <h2 class="title"> <span class="title__line"> <span class="title__inner">Mashiro</span></span><br><span class="title__line"> <span class="title__inner">Bedroom</span></span></h2>
+                    <p class="desc">This is where I host my blog. Most of the posts, for <br /> now, are about what I have learnt during the time I <br /> practiced for competitive programming contests.</p>
+                    <div class="button-wrap">
+                        <a class="button" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="text-decoration: none;">Take me there<span class="button__hover"></span></a>
+                    </div>
+                </div>
+                <div class="content__slide">
+                    <h2 class="title"> <span class="title__line"> <span class="title__inner">Pedophiles' </span></span><span class="title__line"> <span class="title__inner">Journal</span></span></h2>
+                    <p class="desc">A blog written by me & my friends. It is currently <br /> empty because we do not know what shall goes <br /> there. Even the blog name is not decided yet.</p>
+                    <div class="button-wrap"><a class="button" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="text-decoration: none;">Take me there anyway<span class="button__hover"></span></a></div>
+                </div>
+                <div class="content__ping content__ping--noanimation"></div>
+            </div>
         </div>
     </div>
-</div>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src="/assets/js/index.js"></script>
+    <script>
+        var dt = new Date();
+        var month = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"];
+        var curdate = dt.getDate() + " " + month[dt.getMonth()] + " " + dt.getFullYear()
+        document.getElementById("curdate").innerHTML = curdate;
+        document.getElementById("curdate2").innerHTML = curdate;
+    </script>
+</body>
 
-<script src="assets/js/index.js"></script>
+</html>
