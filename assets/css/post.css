@@ -1,12 +1,14 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+@import "https://fonts.googleapis.com/css?family=Open+Sans&display=swap";
 .contents .container {
     padding: 0 100px;
 }
 
-.post .header {
+.post__header {
     text-align: center;
 }
 
-.post .header .title {
+.post__header .title {
     font-family: "Roboto Slab";
     font-size: 3rem;
     color: #000000;
@@ -21,6 +23,13 @@
     margin-bottom: 50px;
 }
 
+.post__content {
+    line-height: normal;
+    font-size: 1.13rem;
+    font-family: Roboto;
+    color: black;
+}
+
 .highlight {
-    font-size: 1.08rem;
+    font-size: 1em;
 }

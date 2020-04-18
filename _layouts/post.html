@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="/assets/css/footer.css">
     <link rel="stylesheet" href="/assets/css/post.css">
     <link rel="stylesheet" href="/assets/css/prism.css">
-    {% if page.css %}<link rel="stylesheet" href="/assets/css/{{ page.css }}">{% endif %}
+    {% if page.css %}
+    <link rel="stylesheet" href="/assets/css/{{ page.css }}">{% endif %}
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="/assets/js/jquery-ui.js"></script>
@@ -27,22 +28,15 @@
         <div class="container">
             <article class="post">
 
-                <div class="header">
-                    <h1 class="title">{{ page.title | escape }}</h1>
+                <div class="post__header">
+                    <h1 class="title">{{ page.title }}</h1>
                     <h5 class="date">Posted on {{ page.date | date_to_long_string }}</h5>
                 </div>
-                <p style="text-align: center; width:100%">
-                    <div class="line"> </div>
-                </p>
-                <div class="post-content e-content" itemprop="articleBody">
+                <div class="line"> </div>
+                <div class="post__content">
                     {{ content }}
                 </div>
 
-                {%- if site.disqus.shortname -%}
-                {%- include disqus_comments.html -%}
-                {%- endif -%}
-
-                <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
             </article>
         </div>
     </div>
