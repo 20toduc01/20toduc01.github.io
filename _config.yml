@@ -24,3 +24,6 @@ permalink: /:categories/:title/
 theme: minima
 plugins:
   - jekyll-feed
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
