@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="/assets/css/default.css">
     <link rel="stylesheet" href="/assets/css/header.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
-    <link rel="stylesheet" href="/assets/css/prism.css">
-    <link rel="stylesheet" href="/assets/css/{{ page.css }}">
+    {% if page.css %}<link rel="stylesheet" href="/assets/css/{{ page.css }}">{% endif %}
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="/assets/js/jquery-ui.js"></script>
@@ -26,9 +25,7 @@
         {{ content }}
     </div>
     {% include footer.html %}
-    <script src="/assets/js/prism.js">
 
-    </script>
 </body>
 
 </html>

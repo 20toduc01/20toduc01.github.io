@@ -1,5 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700");
 
+header {
+    -webkit-backface-visibility: hidden;
+    user-select: none;
+    /* supported by Chrome and Opera */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+}
+
 header:after, #timeline .timeline-item:after, header:before, #timeline .timeline-item:before {
     content: '';
     display: block;
@@ -18,7 +32,7 @@ header a {
 }
 
 
-header h1, h2, h3, h4 {
+header h1, h2, h3, h4, h5 {
     font-family: "Dosis", arial, tahoma, verdana;
     font-weight: 500;
 }

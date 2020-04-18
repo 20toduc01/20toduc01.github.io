@@ -1,5 +1,14 @@
-@import "monokai.css";
-.container{
-    height: 0;
-    width: 0;
+.contents .container {
+    padding: 0 100px;
 }
+.post .header {
+    text-align: center;
+}
+
+.post .header .title {
+    font-family: "Roboto Slab";
+    font-size: 3rem;
+    color: #000000;
+}
+
+.post .header

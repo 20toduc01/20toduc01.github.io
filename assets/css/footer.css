@@ -1,3 +1,17 @@
+footer {
+    -webkit-backface-visibility: hidden;
+    user-select: none;
+    /* supported by Chrome and Opera */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+}
+
 footer p, footer strong, footer b, footer {
     color: #b0b0b0;
 }

@@ -1,29 +1,50 @@
----
-layout: default
----
-<div class="container">
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+<!DOCTYPE html>
+<html lang="en">
 
-  <div class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
-      {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
-  </div>
+<head>
+    <meta charset="UTF-8">
+    <title>Mashiro Blog Posts</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'>
+    <link rel="stylesheet" href="/assets/css/default.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/post.css">
+    <link rel="stylesheet" href="/assets/css/prism.css">
+    {% if page.css %}<link rel="stylesheet" href="/assets/css/{{ page.css }}">{% endif %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/assets/js/jquery-ui.js"></script>
+    <script src="/assets/js/raindrops.js"></script>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+</head>
 
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
+<body>
 
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-</article>
-</div>
+    {% include header.html %}
+    <div class="contents">
+        <div class="container">
+            <article class="post">
+
+                <div class="header">
+                    <h1 class="title">{{ page.title | escape }}</h1>
+                    <h5 class="date">Posted on {{ page.date | date_to_long_string }}</h5>
+                </div>
+
+                <div class="post-content e-content" itemprop="articleBody">
+                    {{ content }}
+                </div>
+
+                {%- if site.disqus.shortname -%}
+                {%- include disqus_comments.html -%}
+                {%- endif -%}
+
+                <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+            </article>
+        </div>
+    </div>
+    {% include footer.html %}
+    <script src="/assets/js/prism.js"></script>
+</body>
+
+</html>
