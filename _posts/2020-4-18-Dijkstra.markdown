@@ -5,6 +5,7 @@ date:   2020-04-14 01:17:59 +0700
 categories: post CP
 ---
 
+Problem: Given a graph (directed or undirected), find the path with an optimized value of a cost function F( (u,v) ).
 
 ```cpp
 #include <bits/stdc++.h>

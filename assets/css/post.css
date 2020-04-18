@@ -1,6 +1,7 @@
 .contents .container {
     padding: 0 100px;
 }
+
 .post .header {
     text-align: center;
 }
@@ -9,6 +10,15 @@
     font-family: "Roboto Slab";
     font-size: 3rem;
     color: #000000;
+}
+
+.line {
+    width: 30%;
+    height: 10px;
+    border-bottom: 3px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
 }
 
 .highlight {
