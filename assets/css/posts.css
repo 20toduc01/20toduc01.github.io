@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap");
 @import "https://fonts.googleapis.com/css?family=Open+Sans&display=swap";
-.contents .container{
+
+.contents .container {
     align-items: center;
     padding: 0 100px;
 }
-
 
 .heading {
     text-align: center;
@@ -22,7 +22,7 @@
     margin-bottom: 30px;
 }
 
-.post-list{
+.post-list {
     padding: 0;
 }
 
@@ -30,14 +30,24 @@
     list-style-type: none;
 }
 
-.post-list li p {
-    font-family: 'Open Sans';
-}
-
 .post-list h3 {
     font-size: 2.5rem;
 }
 
+.post-list a {
+    text-decoration: none;
+    color:black;
+}
+
+.post-list a:hover {
+    color: indianred;
+}
+
 .post-list h4 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+}
+
+.post-list p {
+    font-family: 'Open Sans';
+    color: black;
 }
