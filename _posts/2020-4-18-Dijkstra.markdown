@@ -6,12 +6,11 @@ categories: post CP
 ---
 
 
-<pre><code class="lang-cpp">
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
     return 0;
     cout << "Bác tài\n";
 }
-
-</code></pre>
+```

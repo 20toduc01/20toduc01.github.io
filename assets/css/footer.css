@@ -10,6 +10,7 @@ footer {
     /* Firefox */
     -ms-user-select: none;
     /* Internet Explorer/Edge */
+    font-size: 14px;
 }
 
 footer p, footer strong, footer b, footer {
