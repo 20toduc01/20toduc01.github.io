@@ -5,22 +5,23 @@ permalink: /posts/
 css: posts.css
 ---
 <div class="container">
-    {%- if site.posts.size > 0 -%}
-    <h2 class="heading">My Posts</h2>
+    <h1 class="heading">List of my posts</h1>
+    <div class="line"> </div>
+    <br>
     <ul class="post-list">
-        {%- for post in site.posts -%}
+        {% for post in site.posts %}
         <li>
             <h3>
-                <a class="post-link" href="{{ post.url | relative_url }}">
+                <a class="post__link" href="{{ post.url | relative_url }}">
                     {{ post.title | escape }}
                 </a>
-                <br>
-                <span class="post-meta">{{ post.date | date_to_long_string  }}</span>
             </h3>
-            {{ post.excerpt }}
+            <h4>
+                <span class="post-meta">{{ post.date | date_to_long_string  }}</span>
+            </h4>
+            <p> {{ post.excerpt }} </p>
         </li>
-        {%- endfor -%}
+        {% endfor %}
     </ul>
 
-    {%- endif -%}
 </div>

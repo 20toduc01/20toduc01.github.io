@@ -1,17 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap");
+@import "https://fonts.googleapis.com/css?family=Open+Sans&display=swap";
 .contents .container{
     align-items: center;
-    text-align: center;
+    padding: 0 100px;
 }
 
-.heading{
-    font-size: 50px;
-    font-family: 'Raleway';
+
+.heading {
+    text-align: center;
+    font-family: "Roboto Slab";
+    font-size: 3rem;
+    color: #000000;
 }
+
+.line {
+    width: 30%;
+    height: 10px;
+    border-bottom: 3px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
 .post-list{
     padding: 0;
 }
 
-li{
+.post-list li {
     list-style-type: none;
+}
+
+.post-list li p {
+    font-family: 'Open Sans';
+}
+
+.post-list h3 {
+    font-size: 2.5rem;
+}
+
+.post-list h4 {
+    font-size: 1.3rem;
 }
