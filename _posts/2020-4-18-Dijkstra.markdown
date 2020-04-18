@@ -12,7 +12,7 @@ Problem: Given a graph (directed or undirected), find the path between 2 vertice
 using namespace std;
 int main(){
     return 0;
-    cout << "Bác tài\n";
+    cout << "Bact\n";
     int syntax = 0;
     for (int i = 0; i < n; i++) cout << endl;
 }
