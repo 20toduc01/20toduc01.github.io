@@ -24,6 +24,15 @@
 <body>
 
     {% include header.html %}
+    <div class="toggle-darkmode">
+        <a href="#" class="float">
+            <i class="fas fa-moon my-float"></i>
+        </a>
+        <div class="label-container">
+            <div class="label-text">Night mode</div>
+        </div>
+    </div>
+
     <div class="contents">
         <div class="container">
             <article class="post">
@@ -43,10 +52,28 @@
     {% include footer.html %}
     <script src="/assets/js/prism.js"></script>
     <script>
-         $('.post__title').addClass('darkmode');
-         $('.post__content').addClass('darkmode');
-         $('body').addClass('darkmode');
-         $('.line').addClass('darkmode');
+        let i = 1;
+        $('.toggle-darkmode').on("click", () => {
+            if (i) {
+                $('.post__title').addClass('darkmode');
+                $('.post__content').addClass('darkmode');
+                $('body').addClass('darkmode');
+                $('.line').addClass('darkmode');
+                $('pre').addClass('darkcode');
+                $('code').addClass('darkcode');
+                $('.operator').addClass('darkcode');
+                i ^= 1;
+            } else {
+                $('.post__title').removeClass('darkmode');
+                $('.post__content').removeClass('darkmode');
+                $('body').removeClass('darkmode');
+                $('.line').removeClass('darkmode');
+                $('pre').removeClass('darkcode');
+                $('code').removeClass('darkcode');
+                $('.operator').removeClass('darkcode');
+                i ^= 1;
+            }
+        });
     </script>
 </body>
 
