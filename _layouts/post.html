@@ -29,7 +29,7 @@
             <i class="fas fa-moon my-float"></i>
         </div>
         <div class="label-container">
-            <div class="label-text">Toggle night mode</div>
+            <div class="label-text">Toggle theme</div>
         </div>
     </div>
 
@@ -59,20 +59,35 @@
                 $('.post__content').addClass('darkmode');
                 $('body').addClass('darkmode');
                 $('.line').attr('style','border-bottom: 3px solid white;');
-                $('pre').addClass('darkcode');
-                $('code').addClass('darkcode');
-                $('.operator').addClass('darkcode');
                 $('.float').attr("style", "box-shadow: none;");
+
+                //dark code
+                $('pre').attr('style','background: #282c34;');
+                $('code').attr('style','background: #282c34; text-shadow: none !important; color: #abb2ae;');
+                $('.operator').attr('style','background: #282c34; color: #c678dd;');
+                $('.keyword').attr('style','color: #56b6c2;');
+                $('.number').attr('style','color: #d19a66;');
+                $('.string').attr('style','color: #98c379;');
+                $('.macro').attr('style','color: #c678dd;');
+                $('.function').attr('style','color: #e06b73;');
+
                 i ^= 1;
             } else {
                 $('.post__title').removeClass('darkmode');
                 $('.post__content').removeClass('darkmode');
                 $('body').removeClass('darkmode');
                 $('.line').attr('style','');
-                $('pre').removeClass('darkcode');
-                $('code').removeClass('darkcode');
-                $('.float').attr("style", "")
-                $('.operator').removeClass('darkcode');
+                $('.float').attr("style", "");
+
+                //normal code
+                $('pre').attr('style','');
+                $('code').attr('style','');
+                $('.operator').attr('style','');
+                $('.keyword').attr('style','');
+                $('.number').attr('style','');
+                $('.string').attr('style','');
+                $('.macro').attr('style','');
+                $('.function').attr('style','');
                 i ^= 1;
             }
         });
