@@ -29,8 +29,8 @@
             <article class="post">
 
                 <div class="post__header">
-                    <h1 class="title">{{ page.title }}</h1>
-                    <h5 class="date">Posted on {{ page.date | date_to_long_string }}</h5>
+                    <h1 class="post__title">{{ page.title }}</h1>
+                    <h5 class="post__date">Posted on {{ page.date | date_to_long_string }}</h5>
                 </div>
                 <div class="line"> </div>
                 <div class="post__content">
@@ -42,6 +42,12 @@
     </div>
     {% include footer.html %}
     <script src="/assets/js/prism.js"></script>
+    <script>
+         $('.post__title').addClass('darkmode');
+         $('.post__content').addClass('darkmode');
+         $('body').addClass('darkmode');
+         $('.line').addClass('darkmode');
+    </script>
 </body>
 
 </html>

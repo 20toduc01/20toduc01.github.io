@@ -8,7 +8,7 @@
     text-align: center;
 }
 
-.post__header .title {
+.post__title {
     font-family: "Roboto Slab";
     font-size: 3rem;
     color: #000000;
@@ -33,4 +33,9 @@
 
 .highlight {
     font-size: 1em;
+}
+
+.darkmode {
+    color: #f1f1f1;
+    background-color: #1f1f1f;
 }
