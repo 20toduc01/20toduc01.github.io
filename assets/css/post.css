@@ -83,17 +83,13 @@
 	margin-top:18px;
 }
 
-a.float + div.label-container {
+div.float + div.label-container {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.5s ease;
 }
 
-a.float:hover + div.label-container{
+div.float:hover + div.label-container{
   visibility: visible;
   opacity: 1;
-}
-
-a:hover {
-    color: white;
 }
