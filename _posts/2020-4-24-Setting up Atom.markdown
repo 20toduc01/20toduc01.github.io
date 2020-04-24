@@ -18,7 +18,7 @@ I love the color schemes of Atom and its simple yet elegant UI in general. The s
 ### 2. Working with Git becomes so much easier
 <img style="width:100%" src="/assets/posts/2020-4-24-Setting-up-Atom/git.jpg" alt="Git features in Atom">
 
-This website is rendered by Github Pages (Jekyll) and I built the whole thing inside Atom. Atom git automatically tracks changes, allows you to review them and help with some extra *thingy* relating to git functions.
+This website is rendered by Github Pages (Jekyll) and I built the whole thing inside Atom. Atom git automatically tracks changes, allows you to review them and helps with some extra *thingy* related to git functions.
 
 ### 3. Plugins
 <img style="width:100%" src="/assets/posts/2020-4-24-Setting-up-Atom/packages.jpg" alt="Atom packages">
