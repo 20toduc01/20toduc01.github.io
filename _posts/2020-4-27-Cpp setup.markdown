@@ -4,6 +4,7 @@ title:  "My C++ competitive programming setup"
 categories: posts
 tag: cp ex
 ---
+
 The title is pretty self-explanatory, so here we go.
 
 ## IDE/Editors I use
