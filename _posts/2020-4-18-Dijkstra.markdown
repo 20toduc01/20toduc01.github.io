@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Djikstra Algorithm"
-categories: posts
+title:  "Djikstra Algorithm (unfinished)"
+categories: posts unfinished
 tag: cp algo
 ---
 
