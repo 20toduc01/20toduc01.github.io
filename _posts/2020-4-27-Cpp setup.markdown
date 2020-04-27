@@ -10,7 +10,7 @@ The title is pretty self-explanatory, so here we go.
 
 I had been using [Codeblocks](http://www.codeblocks.org/) ever since I started competitive programming until a month ago. The good thing about Codeblocks is definitely its auto-completion feature with built-in library lookup support. If you sometimes forget what-does-what and you need assistance in C-family languages only, [Codeblocks IDE](http://www.codeblocks.org/downloads) might be the perfect choice for you.
 
-<img style="width:100%" src="/assets/posts/2020-4-27-C++-Setup/codeblocks.jpg" alt="Codeblocks">
+<img style="width:100%" src="/assets/posts/2020-4-27-Cpp-Setup/codeblocks.jpg" alt="Codeblocks">
 
 However, when I started working on other languages (Python, HTML/CSS/Javascript,...), I felt like I needed a **customizable text editor** instead. I tried Sublime Text, which worked just fine, then VS Code, even better, but a bit slow, then Atom. I am currently using Atom for the various reasons mentioned in my [earlier post](/posts/Setting-up-Atom).
 
@@ -18,7 +18,7 @@ However, when I started working on other languages (Python, HTML/CSS/Javascript,
 
 I created a folder which stores user-defined executables (eg: C:\Executables). Add it to your `PATH` in environment variable settings.
 
-<img style="width:100%" src="/assets/posts/2020-4-27-C++-Setup/path.jpg" alt="PATH">
+<img style="width:100%" src="/assets/posts/2020-4-27-Cpp-Setup/path.jpg" alt="PATH">
 
 Inside `C:\Executables`, I created 3 batch files, 1 for compilation only (`cp.bat`), 1 which compiles then runs the program (`cpr.bat`) and 1 to delete all `.exe` and `.o` files in current code folder (`deltrash.bat`).
 
@@ -41,7 +41,7 @@ del *.exe
 
 Make sure to save them. Now, say, I want to compile and run my `1324F.cpp`. I can do it like this:
 
-<img style="width:100%" src="/assets/posts/2020-4-27-C++-Setup/ex.jpg" alt="cpr">
+<img style="width:100%" src="/assets/posts/2020-4-27-Cpp-Setup/ex.jpg" alt="cpr">
 
 ## Default snippet
 
