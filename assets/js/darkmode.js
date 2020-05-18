@@ -1,4 +1,8 @@
 function darkmode_on(){
+    $('.heading').addClass('darkmode');
+    $('.post__list *').addClass('darkmode');
+    $('hr').attr('style','border-color: white');
+
     $('.post__title').addClass('darkmode');
     $('.post__content').addClass('darkmode');
     $('body').addClass('darkmode');
@@ -17,6 +21,10 @@ function darkmode_on(){
 }
 
 function darkmode_off(){
+    $('.post__list *').removeClass('darkmode');
+    $('.heading').removeClass('darkmode');
+    $('hr').attr('style', '');
+
     $('.post__title').removeClass('darkmode');
     $('.post__content').removeClass('darkmode');
     $('body').removeClass('darkmode');

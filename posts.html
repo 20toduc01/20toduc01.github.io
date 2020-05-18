@@ -4,26 +4,37 @@ list_title: Hello
 permalink: /posts/
 css: posts.css
 ---
+<div class="toggle-darkmode">
+    <div class="float">
+        <i class="fas fa-moon my-float"></i>
+    </div>
+    <div class="label-container">
+        <div class="label-text">Toggle theme</div>
+    </div>
+</div>
+
 <div class="container">
     <h1 class="heading">List of my posts</h1>
     <div class="line"> </div>
     <br>
     <hr>
-    <ul class="post-list">
+    <ul class="post__list">
         {% for post in site.posts %}
         <li>
             <a class="post__link" href="{{ post.url | relative_url }}">
-            <h3>
+                <h3>
                     {{ post.title | escape }}
-            </h3>
-            <h4>
-                <span class="post-meta">{{ post.date | date_to_long_string }}</span>
-            </h4>
+                </h3>
+                <h4>
+                    <span class="post__date">{{ post.date | date_to_long_string }}</span>
+                </h4>
             </a>
-            <p> {{ post.excerpt }} </p>
+            <div class="post__brief"> {{ post.excerpt }} </div>
         </li>
         <hr>
         {% endfor %}
     </ul>
 
 </div>
+
+<script src="/assets/js/darkmode.js"></script>

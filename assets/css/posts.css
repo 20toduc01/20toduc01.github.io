@@ -22,32 +22,95 @@
     margin-bottom: 30px;
 }
 
-.post-list {
+.post__list {
     padding: 0;
 }
 
-.post-list li {
+.post__list li {
     list-style-type: none;
 }
 
-.post-list h3 {
+.post__list h3 {
     font-size: 2.5rem;
 }
 
-.post-list a {
+.post__list a {
     text-decoration: none;
     color:black;
 }
 
-.post-list a:hover {
+.post__list a:hover {
     color: indianred;
 }
 
-.post-list h4 {
+.post__list h4 {
     font-size: 1.2rem;
 }
 
-.post-list p {
+.post__list .post__brief {
     font-family: 'Open Sans';
     color: black;
+}
+
+
+
+.line {
+    width: 30%;
+    height: 10px;
+    border-bottom: 3px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.darkmode {
+    color: #f1f1f1;
+    background: #1f1f1f;
+}
+
+
+.label-container{
+	position:fixed;
+	bottom:128px;
+	right:110px;
+	display:table;
+	visibility: hidden;
+}
+
+.label-text{
+	color:#FFF;
+	background:rgba(51,51,51,0.5);
+	display:table-cell;
+	vertical-align:middle;
+	padding:10px;
+	border-radius:3px;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:120px;
+	right:40px;
+	background-color:#f2296c;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+	font-size:24px;
+	margin-top:18px;
+}
+
+div.float + div.label-container {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease;
+}
+
+div.float:hover + div.label-container{
+  visibility: visible;
+  opacity: 1;
 }
